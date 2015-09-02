@@ -7,7 +7,6 @@
 //
 
 #import "M2AppDelegate.h"
-#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation M2AppDelegate
 
