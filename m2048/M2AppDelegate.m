@@ -18,8 +18,8 @@
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator
      authenticateInstallation];
-  //int * test;
-  //*test = 5;
+  int * test;
+  *test = 5;
   
   return YES;
 }
