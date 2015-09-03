@@ -7,13 +7,19 @@
 //
 
 #import "M2AppDelegate.h"
+@import HockeySDK;
 
 @implementation M2AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  int * test;
-  *test = 5;
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"dd749906dd563cc9fcea7b4e1828e2be"];
+    // Do some additional configuration if needed here
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator
+     authenticateInstallation];
+  //int * test;
+  //*test = 5;
   
   return YES;
 }
